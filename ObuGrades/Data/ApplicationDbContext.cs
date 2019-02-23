@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using ObuGrades.Models;
 
 namespace ObuGrades.Data
 {
@@ -12,5 +13,7 @@ namespace ObuGrades.Data
             : base(options)
         {
         }
+
+        public DbSet<Grade> Grade { get; set; }
     }
 }
